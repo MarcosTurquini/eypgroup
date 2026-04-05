@@ -1,6 +1,5 @@
-Thanks for downloading this template!
-
-Template Name: Moderna
-Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+    _   _            _____ _           _ _ 
+   / \ | |          / ____| |         | (_)
+  / _ \| | ___   ___| (___ | |_ __ _ __| |_ 
+ / ___ \ |/ _ \ / __|\___ \| __/ _` / _` | |                           
+/_/   \_\_\___/_/   |____/_|_| \__,_\__,_|_|    
