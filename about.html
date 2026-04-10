@@ -23,6 +23,10 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- Counter  static   -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -35,8 +39,8 @@
 
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">EyP Group</h1>
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1 class="sitename">EyP Group</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -45,8 +49,15 @@
           <li><a href="about.html" class="active">Nosotros</a></li>
           <li><a href="services.html">Servicios</a></li>
           <li><a href="team.html">Equipo</a></li>
-          <li><a href="blog.html">Noticias</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contacto</a></li>
+          <li class="dropdown"><a href="#"><span>Idiomas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#"><img src="https://flagcdn.com/w20/ar.png" alt="ES" class="nav-flag"> ES</a></li>
+              <li><a href="#"><img src="https://flagcdn.com/w20/us.png" alt="EN" class="nav-flag"> EN</a></li>
+              <li><a href="#"><img src="https://flagcdn.com/w20/br.png" alt="BR" class="nav-flag"> BR</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -109,33 +120,30 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Lorem Ipsum</p>
+    <div class="container">
+    <div class="row">
+        <div class="four col-md-3">
+            <div class="counter-box colored"> <i class="fa fa-truck"></i> <span class="counter">300+</span>
+                <p>Clientes Satisfechos</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Lorem, ipsum.</p>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-plane"></i> <span class="counter">100</span>
+                <p>Registered Members</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Lorem, ipsum dolor.</p>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-ship"></i> <span class="counter">70</span>
+                <p>Available Products</p>
             </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Lorem, ipsum.</p>
+        </div>
+        <div class="four col-md-3">
+            <div class="counter-box"> <i class="fa fa-user"></i> <span class="counter">1563</span>
+                <p>Saved Trees</p>
             </div>
-          </div><!-- End Stats Item -->
+        </div>
+    </div>
+</div><!-- End Stats Item -->
 
         </div>
 
@@ -200,75 +208,6 @@
       </div>
 
     </section><!-- /Clients Section -->
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Lorem, ipsum.</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row skills-content skills-animation">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Lorem.</span> <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Lorem.</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Lorem.</span> <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill"><span>Lorem.</span> <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Lorem.</span> <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-            <div class="progress">
-              <span class="skill"><span>Lorem, ipsum dolor..</span> <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div><!-- End Skills Item -->
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Skills Section -->
 
     <section id="testimonials" class="testimonials section"> <!-- /Testimonials Section -->
 
@@ -4043,7 +3982,6 @@
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
@@ -4051,24 +3989,24 @@
             <span class="sitename">GyP Group</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>Lorem, ipsum dolor.</p>
-            <p>Lorem ipsum dolor sit.</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>Lorem, ipsum dolor.</span></p>
-            <p><strong>Email:</strong> <span>Lorem, ipsum dolor.</span></p>
+            <p>Salta, Capital.</p>
+            <p>Argentina.</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+54 387 400 0000</span></p>
+            <p><strong>Email:</strong> <span>[EMAIL_ADDRESS]</span></p>
           </div>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Nosotros</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Terminos y Condiciones</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <!-- <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
             <li><i class="bi bi-chevron-right"></i> <a href="#">Lorem, ipsum.</a></li>
@@ -4076,14 +4014,14 @@
             <li><i class="bi bi-chevron-right"></i> <a href="#">Lorem, ipsum.</a></li>
             <li><i class="bi bi-chevron-right"></i> <a href="#">lorem1</a></li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-4 col-md-12">
           <h4>Lorem, ipsum.</h4>
           <p>Lorem ipsum dolor sit amet.</p>
           <div class="social-links d-flex">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
+            <!-- <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a> -->
             <a href=""><i class="bi bi-instagram"></i></a>
             <a href=""><i class="bi bi-linkedin"></i></a>
           </div>
@@ -4091,17 +4029,10 @@
 
       </div>
     </div>
-    <!--
+
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">Lorem.</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] 
-        Designed by lorem1
-      </div>
-    </div> -->
+    </div>
 
   </footer>
 
