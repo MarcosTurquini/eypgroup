@@ -67,7 +67,7 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  color: #ffc107;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -287,6 +287,7 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    
   }
 
   .navmenu a i,
@@ -304,7 +305,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #ffc107;
   }
 
   .navmenu .dropdown ul {
@@ -341,7 +342,7 @@ h6 {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover>a {
-    color: var(--nav-dropdown-hover-color);
+    color: #ffc107;
   }
 
   .navmenu .dropdown:hover>ul {
@@ -490,6 +491,7 @@ h6 {
     display: block;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -748,7 +750,10 @@ h6 {
   background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   position: absolute;
   inset: 0;
-  background-image: url(../img/header.jpeg);
+  background-image: url(../img/hT.png);
+  background-repeat: no-repeat; /* 🔥 evita que se repita */
+  background-size: cover; /* cubre todo el ancho */
+  background-position: center; /* centra la imagen */
 }
 
 .page-title h1 {
@@ -2700,3 +2705,47 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+/* Centered container */
+
+.container-img-services img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* clave */
+}
+
+#about .col-lg-6 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.page-title {
+  background-image: url("assets/img/header2.jpg");
+  background-repeat: no-repeat; /* 🔥 evita que se repita */
+  background-size: cover; /* cubre todo el ancho */
+  background-position: center; /* centra la imagen */
+}
+
+
+.page-title {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.service-img-details {
+  width: 60%;
+  margin: 35%;
+  object-fit: cover;
+}
+
+    .service-details .services-list a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 15px;
+      margin-top: 10px;
+      transition: 0.3s;
+      border-radius: 4px;
+    }
