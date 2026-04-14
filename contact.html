@@ -23,6 +23,9 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -124,35 +127,31 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="500">
-              <div class="row gy-4">
-
+            <form id="contact-form" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+            <div class="row gy-4">
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Tu nombre" required="">
+                    <input type="text" name="user_name" class="form-control" placeholder="Tu nombre" required>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Tu email" required="">
+                <div class="col-md-6">
+                    <input type="email" class="form-control" name="user_email" placeholder="Tu email" required>
                 </div>
-
                 <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Asunto" required="">
+                    <input type="text" class="form-control" name="user_phone" placeholder="Teléfono" required>
                 </div>
-
                 <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Mensaje" required=""></textarea>
+                    <input type="text" class="form-control" name="subject" placeholder="Asunto" required>
                 </div>
-
+                <div class="col-md-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Mensaje" required></textarea>
+                </div>
                 <div class="col-md-12 text-center">
-                  <div class="loading">Cargando...</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-
-                  <button type="submit">Enviar Mensaje</button>
+                    <div class="loading">Cargando</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Su consulta se ha enviado con éxito, ¡Muchas gracias!</div>
+                    <button type="submit">Solicite su consulta</button>
                 </div>
-
-              </div>
-            </form>
+            </div>
+        </form>
           </div><!-- End Contact Form -->
 
         </div>
@@ -231,6 +230,10 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+
+  <!-- EmailJS SDK testeo-->
+<script type="text/javascript" src="./assets/js/emailjs-handler.js"></script>
+<script src="./assets/js/emailjs-handler.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
