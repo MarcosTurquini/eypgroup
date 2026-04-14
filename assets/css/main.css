@@ -661,6 +661,7 @@ h6 {
   font-size: 14px;
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -2505,6 +2506,10 @@ section,
 
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.numberl {
+  color: #00000096;
 }
 
 /*--------------------------------------------------------------
